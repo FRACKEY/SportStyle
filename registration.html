@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/burger.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+        <div class="logo">
+            <a href="glavnaya.html"><img src="img/logo.png" alt="Логотип"></a>
+        </div>
+        <button class="burger-menu-button" aria-label="Toggle menu">
+          <div class="burger-container">
+              <img src="img/burger_menu.png" alt="Меню">
+          </div>
+        </button>        
+          <nav class="main-menu-container" id="main-menu">
+            <ul>
+                <li>
+                    <div class="search-container">
+                        <input type="text" placeholder="Поиск...">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/search.png" alt="Search" class="lupa">
+                    </div>
+                </li>
+                <li><a href="Comands.html">Тренеры и просмотр секций</a></li>
+                <li><a href="O_nas.html">О нас</a></li>
+                <li><a href="vhod.html" class="login-button">Login</a></li>
+                <li><a href="registration.html" class="register-button">Register</a></li>
+                <li><a href="glavnaya.html#subscription-container" class="subscribe-button">Купить абонемент</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="burger-menu">
+      <ul>
+          <li><a href="Comands.html">Тренеры и просмотр секций</a></li>
+          <li><a href="O_nas.html">О нас</a></li>
+          <li><a href="vhod.html">Вход</a></li>
+          <li><a href="registration.html">Зарегистрироваться</a></li>
+          <li><a href="glavnaya.html#subscription-container">Купить абонемент</a></li>
+      </ul>
+    </div>
+  </header>
+  <form id="registrationForm">
+    <div class="reg_label"><p class="form-registration"><h2 class="reg_label">Регистрация</h2></p></div>
+    <div class="form-group1">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required>
+        <div class="error" id="emailError"></div>
+    </div>
+    <div class="form-group1">
+        <label for="firstName">Имя</label>
+        <input type="text" id="firstName" required>
+        <div class="error" id="firstNameError"></div>
+    </div>
+    <div class="form-group1">
+        <label for="lastName">Фамилия</label>
+        <input type="text" id="lastName" required>
+        <div class="error" id="lastNameError"></div>
+    </div>
+    <div class="form-group1">
+        <label for="login">Логин</label>
+        <input type="tel" id="login" required>
+        <div class="error" id="loginError"></div>
+    </div>
+    <div class="form-group1">
+        <label for="password">Пароль</label>
+        <input type="password" id="password" required>
+        <div class="error" id="passwordError"></div>
+    </div>
+    <div class="form-group1">
+        <label for="confirmPassword">Повтор пароля</label>
+        <input type="password" id="confirmPassword" required>
+        <div class="error" id="confirmPasswordError"></div>
+    </div>
+    <div class="form-group input">
+        <input type="checkbox" id="consent" required>
+        <label class="consent">Согласен на обработку персональных данных</label>
+        <div class="error" id="consentError"></div>
+    </div>
+    <button class="button_registration">Регистрация</button>
+  </form>
+  <footer class="footer_up">
+    <div class="contact">
+      <div class="contact-info">
+        <p>8 (499) 543-75-745</p>
+        <p>SportStyle@gmail.com</p>
+    </div>
+    <button class="callback-button">Обратный звонок</button>
+    <div class="schedule">
+        <p>Ежедневно 8:00 - 00:00</p>
+        <p>Без выходных и праздников</p>
+    </div>
+  </footer>
+  <footer class="footer_down">
+    <div class="footer_container">
+        <div class="logo">
+            <img src="img/logo.png" alt="SPORT STYLE">
+        </div>
+        <div class="socials1">
+            <p>Мы в социальных сетях:</p>
+            <a href="#"><img src="img/vk.png" alt="VK"></a>
+            <a href="#"><img src="img/tg.png" alt="Instagram"></a>
+            <a href="#"><img src="img/wsup.png" alt="WhatsApp"></a>
+        </div>
+        <div class="contact1">
+            <p>8 (499) 543-75-745</p>
+            <button class="callback-button1">Обратный звонок</button>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
